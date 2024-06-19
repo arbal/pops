@@ -2,40 +2,50 @@ const stackpath = {
   name: "StackPath",
   url: "https://www.stackpath.com/",
   pops: [
-    "AMS",
-    "ARN",
-    "ATL",
-    "BOG",
-    "BRU",
-    "CDG",
-    "DCA",
-    "DEN",
-    "DFW",
-    "EZE",
-    "FRA",
-    "GIG",
-    "GRU",
-    "HKG",
-    "ICN",
-    "JFK",
-    "LAX",
-    "LHR",
-    "LIM",
-    "MAD",
-    "MEL",
-    "MIA",
-    "MXP",
-    "NRT",
-    "ORD",
-    "PHX",
-    "SCL",
-    "SEA",
-    "SFO",
-    "SIN",
-    "SJC",
-    "SYD",
-    "WAW",
-    "YYZ"
+    "AMS", // Amsterdam (Netherlands)
+    "ARN", // Stockholm (Sweden)
+    "ATL", // Atlanta (US)
+    "BOG", // Bogota (Colombia)
+    "BOS", // Boston (US)
+    "BRU", // Brussels (Belgium)
+    "CDG", // Paris (France)
+    "DCA", // Washington DC (US)
+    "DEN", // Denver (US)
+    "DFW", // Dallas (US)
+    "DTW", // Detroit (US)
+    "DXB", // Dubai (United Arab Emirates)
+    "EZE", // Buenos Aires (Argentina)
+    "FRA", // Frankfurt (Germany)
+    "GIG", // Rio de Janeiro (Brazil)
+    "GRU", // Sao Paulo (Brazil)
+    "HKG", // Hong Kong (China)
+    "ICN", // Seoul (South Korea)
+    "ICT", // Wichita (US)
+    "JFK", // New York (US)
+    "JNB", // Johannesburg (South Africa)
+    "KIX", // Osaka (Japan)
+    "LAX", // Los Angeles (US)
+    "LHR", // London (UK)
+    "LIM", // Lima (Peru)
+    "MAD", // Madrid (Spain)
+    "MEL", // Melbourne (Australia)
+    "MFE", // McAllen (US)
+    "MIA", // Miami (US)
+    "MRS", // Marseille (France)
+    "MXP", // Milan (Italy)
+    "NRT", // Tokyo (Japan)
+    "ORD", // Chicago (US)
+    "PHX", // Phoenix (US)
+    "PNS", // Pensacola (US)
+    "SCL", // Santiago de Chile (Chile)
+    "SEA", // Seattle (US)
+    "SFO", // San Francisco (US)
+    "SIN", // Singapore (Singapore)
+    "SJC", // San Jose (US)
+    "STL", // St. Louis (US)
+    "SYD", // Sydney (Australia)
+    "WAW", // Warsaw (Poland)
+    "YYZ" // Toronto (Canada)
   ]
 };
 

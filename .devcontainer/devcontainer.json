@@ -4,7 +4,7 @@
   "name": "Node.js",
   "build": {
     "dockerfile": "Dockerfile",
-    "args": { "VARIANT": "16" }
+    "args": { "VARIANT": "18" }
   },
 
   // Set *default* container specific settings.json values on container create.
@@ -15,8 +15,9 @@
     "dbaeumer.vscode-eslint",
     "eg2.vscode-npm-script",
     "bungcip.better-toml",
-    "coenraads.bracket-pair-colorizer",
-    "mkxml.vscode-filesize"
+    "mkxml.vscode-filesize",
+    "GitHub.copilot-nightly",
+    "GitHub.copilot-labs"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.

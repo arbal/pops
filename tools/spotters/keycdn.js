@@ -6,7 +6,7 @@ import provider from "../../data/providers/keycdn.js";
 const asset = "keycdn";
 
 const spotter = async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
   await page.goto("https://status.keycdn.com/");
   const data = await page.$eval(
@@ -25,6 +25,6 @@ spotter()
       console.log(`${asset}:success`);
     } else {
       toTelegram(asset);
-      console.log(`${asset}:fail`);
+      console.log(`${asset}:fail ${x.length - provider.pops.length}`);
     }
   });

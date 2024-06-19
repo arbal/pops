@@ -6,7 +6,7 @@ import provider from "../../data/providers/stackpath.js";
 const asset = "stackpath";
 
 const spotter = async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
   await page.goto("https://status.stackpath.com/");
   const data = await page.$eval(
@@ -22,24 +22,31 @@ const translate = new Map([
     ["AM", "AMS"],
     ["AT", "ATL"],
     ["BO", "BOG"],
+    ["BS", "BOS"],
     ["BR", "BRU"],
     ["CH", "ORD"],
     ["DA", "DFW"],
+    ["DB", "DXB"],
     ["DC", "DCA"],
     ["DE", "DEN"],
+    ["DT", "DTW"],
     ["EZ", "EZE"],
     ["FR", "FRA"],
     ["GI", "GIG"],
     ["HK", "HKG"],
+    ["JB", "JNB"],
     ["LA", "LAX"],
     ["LI", "LIM"],
     ["LO", "LHR"],
     ["MA", "MAD"],
     ["ME", "MEL"],
+    ["MF", "MFE"],
     ["MI", "MIA"],
     ["ML", "MXP"],
     ["NY", "JFK"],
+    ["OS", "KIX"],
     ["PA", "CDG"],
+    ["PN", "PNS"],
     ["PH", "PHX"],
     ["SC", "SCL"],
     ["SE", "SEA"],
@@ -49,10 +56,12 @@ const translate = new Map([
     ["SK", "ARN"],
     ["SL", "ICN"],
     ["SP", "GRU"],
+    ["ST", "STL"],
     ["SY", "SYD"],
     ["TK", "NRT"],
     ["TR", "YYZ"],
-    ["WA", "WAW"]
+    ["WA", "WAW"],
+    ["WI", "ICT"]
   ]
 ]);
 

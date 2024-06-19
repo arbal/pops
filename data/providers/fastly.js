@@ -2,97 +2,102 @@ const fastly = {
   name: "Fastly",
   url: "https://www.fastly.com",
   pops: [
-    "ACC",
-    "AKL",
-    "AMS",
-    "ATL",
-    "BMA",
-    "BNE",
-    "BOG",
-    "BOM",
-    "BOS",
-    "BUR",
-    "BWI",
-    "CCU",
-    "CDG",
-    "CGH",
-    "CHI",
-    "CMH",
-    "CPH",
-    "CPT",
-    "CWB",
-    "DAL",
-    "DCA",
-    "DEL",
-    "DEN",
-    "DFW",
-    "DTW",
-    "DUB",
-    "DXB",
-    "EWR",
-    "EZE",
-    "FCO",
-    "FJR",
-    "FOR",
-    "FRA",
-    "FTY",
-    "GIG",
-    "GRU",
-    "HEL",
-    "HHN",
-    "HKG",
-    "HND",
-    "HYD",
-    "IAD",
-    "IAH",
-    "ICN",
-    "ITM",
-    "JAX",
-    "JNB",
-    "KUL",
-    "LAX",
-    "LCK",
-    "LCY",
-    "LEE",
-    "LGA",
-    "LGB",
-    "LGW",
-    "LHR",
-    "LIM",
-    "MAA",
-    "MAD",
-    "MAN",
-    "MCI",
-    "MDW",
-    "MEL",
-    "MIA",
-    "MNL",
-    "MRS",
-    "MSP",
-    "MUC",
-    "MXP",
-    "NRT",
-    "ORD",
-    "OSL",
-    "PAO",
-    "PDK",
-    "PDX",
-    "PER",
-    "PHX",
-    "PWK",
-    "QPG",
-    "SCL",
-    "SEA",
-    "SJC",
-    "STL",
-    "STP",
-    "SYD",
-    "TYO",
-    "VIE",
-    "WLG",
-    "YUL",
-    "YVR",
-    "YYZ"
+    "ACC", // Accra (Ghana)
+    "ADL", // Adelaide (Australia)
+    "AKL", // Auckland (New Zealand)
+    "AMS", // Amsterdam (Netherlands)
+    "ATL", // Atlanta (US)
+    "BKK", // Bangkok (Thailand)
+    "BMA", // Stockholm (Sweden)
+    "BNE", // Brisbane (Australia)
+    "BOG", // Bogota (Colombia)
+    "BOM", // Mumbai (India)
+    "BOS", // Boston (US)
+    "BRU", // Brussels (Belgium)
+    "BUR", // Burbank (US)
+    "CCU", // Kolkata (India)
+    "CGH", // Sao Paulo (Brazil)
+    "CHC", // Christchurch (New Zealand)
+    "CHI", // Chicago (US)
+    "CMH", // Columbus (US)
+    "CPH", // Copenhagen (Denmark)
+    "CPT", // Cape Town (South Africa)
+    "CWB", // Curitiba (Brazil)
+    "DAL", // Dallas (US)
+    "DEL", // Delhi (India)
+    "DEN", // Denver (US)
+    "DFW", // Dallas (US)
+    "DTW", // Detroit (US)
+    "DUB", // Dublin (Ireland)
+    "DXB", // Dubai (United Arab Emirates)
+    "EWR", // Newark (US)
+    "EZE", // Buenos Aires (Argentina)
+    "FCO", // Rome (Italy)
+    "FJR", // Fujairah (United Arab Emirates)
+    "FOR", // Fortaleza (Brazil)
+    "FRA", // Frankfurt (Germany)
+    "FTY", // Atlanta (US)
+    "GIG", // Rio de Janeiro (Brazil)
+    "GNV", // Gainesville (US)
+    "GRU", // Sao Paulo (Brazil)
+    "HEL", // Helsinki (Finland)
+    "HHN", // Frankfurt (Germany)
+    "HKG", // Hong Kong (China)
+    "HND", // Tokyo (Japan)
+    "HNL", // Honolulu (US)
+    "HYD", // Hyderabad (India)
+    "IAD", // Washington DC (US)
+    "IAH", // Houston (US)
+    "ICN", // Seoul (South Korea)
+    "ITM", // Osaka (Japan)
+    "JFK", // New York (US)
+    "JNB", // Johannesburg (South Africa)
+    "KUL", // Kuala Lumpur (Malaysia)
+    "LAX", // Los Angeles (US)
+    "LCK", // Columbus (US)
+    "LCY", // London (UK)
+    "LEE", // Leesburg (US)
+    "LGA", // New York (US)
+    "LGW", // London (UK)
+    "LHR", // London (UK)
+    "LIM", // Lima (Peru)
+    "LIN", // Milan (Italy)
+    "LIS", // Lisbon (Portugal)
+    "MAA", // Chennai (India)
+    "MAD", // Madrid (Spain)
+    "MAN", // Manchester (UK)
+    "MCI", // Kansas City (US)
+    "MEL", // Melbourne (Australia)
+    "MIA", // Miami (US)
+    "MNL", // Manila (Philippines)
+    "MRS", // Marseille (France)
+    "MSP", // Minneapolis (US)
+    "MUC", // Munich (Germany)
+    "MXP", // Milan (Italy)
+    "NRT", // Tokyo (Japan)
+    "ORY", // Paris (France)
+    "OSL", // Oslo (Norway)
+    "PAO", // Palo Alto (US)
+    "PDK", // Atlanta (US)
+    "PDX", // Portland (US)
+    "PER", // Perth (Australia)
+    "PHX", // Phoenix (US)
+    "PMO", // Palermo (Italy)
+    "QPG", // Singapore (Singapore)
+    "SCL", // Santiago (Chile)
+    "SEA", // Seattle (US)
+    "SJC", // San Jose (US)
+    "SOF", // Sofia (Bulgaria)
+    "STL", // St. Louis (US)
+    "STP", // St. Paul (US)
+    "SYD", // Sydney (Australia)
+    "TYO", // Tokyo (Japan)
+    "VIE", // Vienna (Austria)
+    "WLG", // Wellington (New Zealand)
+    "YUL", // Montreal (Canada)
+    "YVR", // Vancouver (Canada)
+    "YYC", // Calgary (Canada)
+    "YYZ" // Toronto (Canada)
   ]
 };
 

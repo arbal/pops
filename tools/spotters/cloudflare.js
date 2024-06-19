@@ -6,7 +6,7 @@ import provider from "../../data/providers/cloudflare.js";
 const asset = "cloudflare";
 
 const spotter = async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
   await page.goto("https://www.cloudflarestatus.com/");
   const data = await page.$eval(
@@ -19,13 +19,15 @@ const spotter = async () => {
 
 spotter()
   .then(value => value.match(/\((.{3})\)/gm).map(x => x.slice(1, -1)))
-  .then(a =>
-    a.map(x => {
-      // hardcoding array due to Cloudflare Error
-      if (x === "NBG") return "NGB";
-      else return x;
-    })
-  )
+  .then(a => a.filter(element => element !== "DEX"))
+  .then(a => a.filter(element => element !== "DLP"))
+  // .then(a =>
+  //   a.map(x => {
+  //     hardcoding array due to Cloudflare Error
+  //     if (x === "NBG") return "NGB";
+  //     else return x;
+  //   })
+  // )
   .then(extracted => {
     if (_.isEqual(extracted.sort(), provider.pops)) {
       console.log(`${asset}:success`, extracted.length - provider.pops.length);

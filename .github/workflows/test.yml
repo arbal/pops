@@ -8,16 +8,23 @@ jobs:
     timeout-minutes: 5
     strategy:
       matrix:
-        node: [12, 14, 16]
+        node: [16, 18, 20]
     steps:
-    - uses: actions/checkout@v2.4.0
-    - uses: actions/setup-node@v2.4.1
+    - uses: actions/checkout@v4
+    - uses: pnpm/action-setup@v4
+      with:
+        version: latest
+    - uses: actions/setup-node@v4.0.2
       with:
         node-version: ${{ matrix.node }}
-        cache: 'yarn'
-    - name: Yarn Install
-      run: YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install
+        cache: 'pnpm'
+    - name: PNPM Install
+      run: pnpm install --no-frozen-lockfile
     - name: Pack and Unpack
-      run: npm pack && tar -xvzf *.tgz
+      run: pnpm pack && tar -xvzf *.tgz
     - name: Test
-      run: yarn test
+      run: pnpm test
+    - name: Delete /package and *.tgz
+      run: rm -rf package && rm -rf *.tgz
+    - name: Publish Dry Run
+      run: pnpm publish --dry-run --no-git-checks
