@@ -6,7 +6,11 @@
 
 ES Module with geolocation and IATA codes of Content Delivery Networks and hosting companies  points of presence. Useful for plotting, planning and network measurements.
 
-## 🔨 Install with `yarn` or `npm`
+## 🔨 Install
+
+```bash
+bun add @adaptivelink/pops
+```
 
 ```bash
 yarn add @adaptivelink/pops
@@ -107,6 +111,14 @@ Spotters are scheduled GitHub Actions that continuously monitor CDNs and Hosting
 
 Feel free to suggest or PR more networks and PoP locations.
 
+Contributor workflow uses Bun:
+
+```bash
+bun install
+bun run build
+bun run test
+```
+
 ## 💻 Codespaces
 
 This repo is configured for GitHub Codespaces.
@@ -114,3 +126,5 @@ This repo is configured for GitHub Codespaces.
 ## 📒 Jupyter Notebook
 
 A Jupyter Notebook is available at [Kaggle](https://www.kaggle.com/hugoromano/pops-notebook/), where providers rough coverage is simulated at ~5ms RTT. Source for this notebook in directory `notebooks`.
+For guidelines on contributing, see [CONTRIBUTING.md](CONTRIBUTING.md).
+This project is licensed under the [MIT License](LICENSE).
